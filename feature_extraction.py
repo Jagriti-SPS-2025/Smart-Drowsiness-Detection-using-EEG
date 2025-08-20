@@ -1,4 +1,5 @@
 # feature_extraction.py
+# total 27 features
 import numpy as np
 import pandas as pd
 from scipy.signal import welch
