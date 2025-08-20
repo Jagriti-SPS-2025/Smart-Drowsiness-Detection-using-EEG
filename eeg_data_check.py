@@ -29,7 +29,7 @@ def load_and_preview():
         if list(active.columns) == list(drowsy.columns):
             print("✅ Column names match between Active and Drowsy datasets.")
         else:
-            print("⚠️ Column names do NOT match!")
+            print("⚠️ Column names do NOT match!") 
             print("Active columns:", list(active.columns))
             print("Drowsy columns:", list(drowsy.columns))
 
