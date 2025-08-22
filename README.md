@@ -110,51 +110,46 @@ Design a lightweight machine-learning pipeline that analyzes single-channel fron
 
 EEG Drowsiness Detection Pipeline:
 
-Preprocessing
-  │
-  ├─ Load Datasets
-  ├─ Filtering (0.5–30 Hz Butterworth + 50 Hz notch)
-  ├─ Artifact/Spike Removal (±100 µV threshold)
-  └─ Segmentation (1-sec windows, 50% overlap)
-       │
-Feature Extraction
-  │
-  ├─ Band Powers (Delta, Theta, Alpha, Beta)
-  ├─ Ratios (α/β, β/θ, θ/α, Slow/Fast)
-  ├─ Spectral Features (Peak Freq, Centroid, Slope, SEF-95%, Entropy)
-  ├─ Hjorth Parameters (Mobility, Complexity)
-  └─ Time-Domain Statistics (Mean, Variance, IQR, Skewness, Kurtosis)
-       │
-Model Training
-  │
-  ├─ RBF-SVM Classifier
-  ├─ Hyperparameter Tuning (Bayesian Optimization)
-  └─ Stratified 5-Fold Cross-Validation
-       │
-Model Testing
-  │
-  ├─ Predict Unseen EEG Data
-  ├─ Confusion Matrix
-  └─ ROC Curve
-       │
-Model Evaluation
-  │
-  ├─ Accuracy
-  ├─ F1-Score
-  └─ Final Report
+# Repository Structure
 
----
-
-## Repository Structure
 root/
-├── datasets/ ← EEG CSV datasets
-├── model/ ← trained SVM models (.mat, .pkl)
-├── scripts/ ← all code (.py, .m)
-├── submissions/ ← predictions.csv & technical report
-├── images/ ← flowcharts, diagrams
+├── datasets/       ← EEG CSV datasets (active.csv, drowsy.csv)
+├── scripts/        ← all code (.py, .m)
+├── model/          ← trained SVM models (.mat, .pkl)
+├── submissions/    ← predictions.csv & technical report
+├── images/         ← flowcharts, diagrams
 └── README.md
 
+Preprocessing
+├── Load Datasets
+├── Filtering (0.5–30 Hz Butterworth + 50 Hz notch)
+├── Artifact/Spike Removal (±100 µV threshold)
+└── Segmentation (1-sec windows, 50% overlap)
+
+Feature Extraction
+├── Band Powers (Delta, Theta, Alpha, Beta)
+├── Ratios (α/β, β/θ, θ/α, Slow/Fast)
+├── Spectral Features (Peak Freq, Centroid, Slope, SEF-95%, Entropy)
+├── Hjorth Parameters (Mobility, Complexity)
+└── Time-Domain Statistics (Mean, Variance, IQR, Skewness, Kurtosis)
+
+Model Training
+├── RBF-SVM Classifier
+├── Hyperparameter Tuning (Bayesian Optimization)
+└── Stratified 5-Fold Cross-Validation
+
+Model Testing
+├── Predict Unseen EEG Data
+├── Confusion Matrix
+└── ROC Curve
+
+Model Evaluation
+├── Accuracy
+├── F1-Score
+└── Final Report
+
 ---
+
 ## How to Run
 
 ### Prerequisites
