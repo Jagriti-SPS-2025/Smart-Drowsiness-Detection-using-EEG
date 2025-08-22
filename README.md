@@ -94,7 +94,7 @@ Design a lightweight machine-learning pipeline that analyzes single-channel fron
 ## Insights Gained
 - Learned MATLAB functionalities and efficient workflows  
 - Understood EEG preprocessing and feature engineering importance  
--Compared GUI and code-based model training; both achieved similar accuracy, but code-based training was preferred for full control over preprocessing and feature engineering.  
+- Compared GUI and code-based model training; both achieved similar accuracy, but code-based training was preferred for full control over preprocessing and feature engineering.  
 
 ---
 
