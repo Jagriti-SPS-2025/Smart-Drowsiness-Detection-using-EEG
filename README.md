@@ -228,6 +228,10 @@ python scripts/test_model.py
 
 --
 
+Please find the challenge report here👉🏻 https://drive.google.com/file/d/18HXEIdlldYeyBV_aFCrnqVLaAWrA35ZS/view?usp=drivesdk
+
+--
+
 ## References
 - IEEE SPS Forum 2025: [Challenge Details](https://sps.ieeebangalore.org/sps-forum-2025_2/)  
 - EEG Dataset: [IEEE DataPort](https://ieee-dataport.org/documents/eeg-dataset-drowsiness-detection)  
